@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/daterangepicker.min.scss';
+
+
+@import '../../node_modules/slick-carousel-latest/slick/slick';
+/*@import '~slick-carousel-latest/slick/slick';*/
+
+@import "./base/fonts";
+@import "./base/settings.scss";
+@import "./base/variables";
+@import "./base/mixins";
+
+
+@import "./pages/blocks/header";
+@import "./pages/blocks/footer";
+@import "./pages/blocks/modal";
+@import "./pages/blocks/overlay";
+
+
+@import "./pages/about-us/about-us";
+@import "./pages/about-us/review";
+@import "./pages/contacts/contacts.scss";
+@import "./pages/where-to-ride/where-to-ride";
+@import "./pages/rules/rules";
+@import "./pages/main/main";
+
+
+
+@import "./pages/blocks/media";
+@import "./pages/about-us/media";
+@import "./pages/contacts/media";
+@import "./pages/rules/media";
+@import "./pages/where-to-ride/media";
+
+
+

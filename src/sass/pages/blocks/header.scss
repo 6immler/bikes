@@ -1,0 +1,130 @@
+.header__nav-up {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+  
+.header__nav-up .header__nav-list {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+  
+.header__nav-up .header__nav-list .header__nav-item {
+    margin: 0 20px;
+}
+  
+.header__nav-up .header__nav-list .header__nav-item .header__nav-link {
+    color: #14233D;
+    &:hover {
+        color: #297FFF;
+        text-decoration: none;
+    }
+}
+
+.header__nav-link--active {
+    color: #297FFF;
+}
+  
+.header__account {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url('../icons/header/account.svg') center no-repeat;
+}
+  
+.header__feedback {
+    width: 200px;
+    min-height: 40px;
+    border: none;
+    background: #297FFF;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+    
+#clock {
+    color: #14233D;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.header__hamburger {
+    display: none;
+    width: 20px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header__hamburger .header__line {
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.header__hamburger .header__line:nth-child(1) {
+    transform-origin: left top;
+}
+
+.header__hamburger .header__line:nth-child(3) {
+    transform-origin: right bottom;
+}
+
+.header__hamburger--first {
+    transform: translate(4px, 3px) rotate(45deg);
+}
+
+.header__hamburger--middle {
+    transform: scale(0);
+}
+
+.header__hamburger--last {
+    transform: translate(-2px, -16px) rotate(-45deg);
+}
+
+.header__nav-down {
+    position: absolute;
+    z-index: 1;
+    top: -100%;
+    width: 100%;
+    background: #fff;
+    transition: all .5s;
+}
+
+.header__nav-down--active {
+    top: 60px;
+}
+
+.header__nav-link--hide {
+    visibility: hidden;
+}
+
+.header__nav-down .header__nav-list {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.header__nav-down .header__nav-list .header__nav-item .header__nav-link {
+    color: #14233D;
+    font-size: 14px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+  
